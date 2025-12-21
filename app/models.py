@@ -16,6 +16,9 @@ class ProductOut(BaseModel):
     url: str
     source: str
     created_at: str
+    last_price: float | None = None
+    last_checked_at: str | None = None
+    lowest_price_all_time: float | None = None
 
 
 def new_product_item(data: ProductCreate) -> dict:
